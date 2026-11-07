@@ -80,7 +80,7 @@ static NSString *IGRStripComponents(NSString *path, NSUInteger count) {
 }
 
 static BOOL IGRReadExact(gzFile gz, void *buffer, NSUInteger length) {
-    unsigned char *bytes = buffer;
+    unsigned char *bytes = (unsigned char *)buffer;
     NSUInteger done = 0;
     while (done < length) {
         int readBytes = gzread(gz, bytes + done, (unsigned int)(length - done));
