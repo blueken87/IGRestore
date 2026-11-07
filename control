@@ -1,0 +1,9 @@
+Package: com.bluek.igrestore
+Name: IGRestore
+Version: 1.0.0
+Description: Restore an XoaInfo Instagram app-data backup without XoaInfo.
+Author: bluek
+Maintainer: bluek
+Section: Tweaks
+Architecture: iphoneos-arm64
+Depends: mobilesubstrate, firmware (>= 15.0)
